@@ -59,3 +59,15 @@ td {
   width: 20em;
   margin-left: .5em;
 }
+
+/* Add these new rules instead of the previous MathJax rules */
+.MathJax {
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  display: inline-flex !important;  /* Override any inline styles */
+}
+
+.MathJax .math {
+  width: auto !important;  /* Override fixed width */
+  display: inline-flex !important;
+}
